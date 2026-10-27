@@ -421,6 +421,89 @@ caption { caption-side: top; text-align: left; padding: 0.7rem 0.8rem 0.3rem; fo
   </div>
 </section>
 
+<section class="secao" id="transferencia-entre-turnos">
+  <div class="leitura">
+    <h2>Votos entre o 1º e o 2º turno</h2>
+    <p>De onde vieram os votos que cada candidato ganhou entre os turnos, medido seção a seção nas 497.897 seções com boletim nos dois turnos no Brasil (o exterior fica de fora). Fontes: votos de cada candidato a presidente no BU oficial do 1º turno (dadosabertos.tse.jus.br) e BUs do 2º turno. "Entre os dois" é a fatia de Lula nos votos dados a Lula e Flávio.</p>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Contas do país (votos para presidente)</caption>
+      <thead><tr><th></th><th class="n">1º turno</th><th class="n">2º turno</th><th class="n">Diferença</th></tr></thead>
+      <tbody><tr><td>Lula</td><td class="n">53.722.151</td><td class="n">64.056.078</td><td class="n">+10.333.927</td></tr><tr><td>Flávio</td><td class="n">55.960.603</td><td class="n">59.654.544</td><td class="n">+3.693.941</td></tr><tr><td>Demais candidatos</td><td class="n">9.292.275</td><td class="n">0</td><td class="n">−9.292.275</td></tr><tr><td>Brancos e nulos</td><td class="n">5.959.040</td><td class="n">4.144.009</td><td class="n">−1.815.031</td></tr><tr><td>Comparecimento</td><td class="n">124.934.069</td><td class="n">127.854.631</td><td class="n">+2.920.562</td></tr></tbody>
+    </table>
+  </div>
+  <div class="leitura">
+    <ul class="conclusoes">
+      <li>Do total ganho pelos dois entre os turnos (14.027.868 votos), 73,67% foram para Lula e 26,33% para Flávio.</li>
+      <li>Lula entre os dois: 48,98% no 1º turno e 51,78% no 2º (+2,80 pontos). Para empatar, Lula precisava de +1,02 pontos.</li>
+    </ul>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Votos de cada candidato a presidente no 1º turno (13 = Lula, 22 = Flávio)</caption>
+      <thead><tr><th>Número do candidato</th><th class="n">Votos no 1º turno</th><th class="n">% dos válidos</th></tr></thead>
+      <tbody><tr><td>22</td><td class="n">55.960.603</td><td class="n">47,04</td></tr><tr><td>13</td><td class="n">53.722.151</td><td class="n">45,15</td></tr><tr><td>70</td><td class="n">3.438.835</td><td class="n">2,89</td></tr><tr><td>14</td><td class="n">2.667.307</td><td class="n">2,24</td></tr><tr><td>55</td><td class="n">2.600.440</td><td class="n">2,19</td></tr><tr><td>30</td><td class="n">323.159</td><td class="n">0,27</td></tr><tr><td>80</td><td class="n">121.858</td><td class="n">0,10</td></tr><tr><td>16</td><td class="n">42.730</td><td class="n">0,04</td></tr><tr><td>27</td><td class="n">39.218</td><td class="n">0,03</td></tr><tr><td>21</td><td class="n">22.272</td><td class="n">0,02</td></tr><tr><td>35</td><td class="n">16.508</td><td class="n">0,01</td></tr><tr><td>29</td><td class="n">14.825</td><td class="n">0,01</td></tr><tr><td>28</td><td class="n">5.123</td><td class="n">0,00</td></tr></tbody>
+    </table>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Para onde foram os votos de cada origem (estimativa por regressão entre seções)</caption>
+      <thead><tr><th>Origem</th><th class="n">Votos</th><th class="n">Para Lula</th><th class="n">Para Flávio</th></tr></thead>
+      <tbody><tr><td>Candidato 70</td><td class="n">3.438.835</td><td class="n">91,6%</td><td class="n">8,4%</td></tr><tr><td>Candidato 14</td><td class="n">2.667.307</td><td class="n">63,4%</td><td class="n">36,6%</td></tr><tr><td>Candidato 55</td><td class="n">2.600.440</td><td class="n">50,4%</td><td class="n">49,6%</td></tr><tr><td>Demais candidatos menores</td><td class="n">585.693</td><td class="n">30,9%</td><td class="n">69,1%</td></tr><tr><td>Queda de brancos e nulos</td><td class="n">1.815.031</td><td class="n">103,4%</td><td class="n">-3,4%</td></tr><tr><td>Aumento do comparecimento</td><td class="n">2.920.562</td><td class="n">63,4%</td><td class="n">36,6%</td></tr></tbody>
+    </table>
+  </div>
+  <div class="leitura">
+    <p class="texto-secundario">Método: regressão entre seções, sem intercepto, do ganho de Lula e do ganho de Flávio sobre os votos de cada um dos demais candidatos no 1º turno, a queda de brancos e nulos e o aumento do comparecimento. É uma estimativa ecológica (supõe a mesma taxa de transferência em todas as seções); valores fora de 0% a 100% indicam que o modelo não captura todo o movimento entre os turnos.</p>
+  </div>
+  <div class="leitura">
+    <h3>As curvas da apuração na mesma ordem</h3>
+    <ul class="conclusoes">
+      <li>Correlação, seção a seção, da fatia de Lula entre os dois no 1º e no 2º turno: 0,9919.</li>
+      <li>Desvio-padrão da fatia de Lula entre os dois entre seções (1º turno): 18,03 pontos. Desvio-padrão da variação de cada seção entre os turnos: 2,37 pontos.</li>
+      <li>Na ordem de chegada do 1º turno, a curva acumulada do 2º turno fica entre 2,56 e 2,88 pontos acima da do 1º a partir de 5% das seções apuradas; no fim, 2,80 pontos.</li>
+      <li>Variação média por seção (ponderada pelos votos dos dois): +2,96 pontos.</li>
+    </ul>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Variação entre os turnos por faixa da fatia dos demais candidatos na própria seção</caption>
+      <thead><tr><th>Fatia dos demais candidatos no 1º turno</th><th class="n">Seções</th><th class="n">Variação de Lula entre os dois (pontos)</th><th class="n">Ganho de Lula por 100 válidos do 1º turno</th><th class="n">Ganho de Flávio por 100 válidos do 1º turno</th><th class="n">Demais candidatos por 100 válidos do 1º turno</th></tr></thead>
+      <tbody><tr><td>0% a 2%</td><td class="n">16.532</td><td class="n">+1,32</td><td class="n">+4,60</td><td class="n">−0,38</td><td class="n">1,29</td></tr><tr><td>2% a 4%</td><td class="n">57.303</td><td class="n">+1,89</td><td class="n">+6,40</td><td class="n">+0,47</td><td class="n">3,15</td></tr><tr><td>4% a 6%</td><td class="n">97.859</td><td class="n">+2,56</td><td class="n">+7,59</td><td class="n">+1,51</td><td class="n">5,05</td></tr><tr><td>6% a 8%</td><td class="n">111.891</td><td class="n">+3,09</td><td class="n">+8,54</td><td class="n">+2,66</td><td class="n">6,99</td></tr><tr><td>8% a 10%</td><td class="n">95.968</td><td class="n">+3,36</td><td class="n">+9,39</td><td class="n">+3,78</td><td class="n">8,94</td></tr><tr><td>10% a 12%</td><td class="n">62.974</td><td class="n">+3,47</td><td class="n">+10,13</td><td class="n">+4,83</td><td class="n">10,89</td></tr><tr><td>12% a 15%</td><td class="n">39.611</td><td class="n">+3,46</td><td class="n">+10,82</td><td class="n">+6,08</td><td class="n">13,19</td></tr><tr><td>15% a 20%</td><td class="n">13.819</td><td class="n">+3,39</td><td class="n">+11,24</td><td class="n">+8,16</td><td class="n">16,73</td></tr><tr><td>20% a 100%</td><td class="n">1.940</td><td class="n">+3,59</td><td class="n">+13,18</td><td class="n">+11,01</td><td class="n">22,18</td></tr></tbody>
+    </table>
+  </div>
+  <div class="leitura">
+    <p class="texto-secundario">Reta ajustada (mínimos quadrados ponderados): variação = 1,87 + 0,139 pontos por ponto de fatia dos demais. Comparando só seções do mesmo município, a inclinação é de 0,043.</p>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Variação entre os turnos por faixa da fatia do candidato 70, o maior dos demais</caption>
+      <thead><tr><th>Fatia do candidato 70 no 1º turno</th><th class="n">Seções</th><th class="n">Variação de Lula entre os dois (pontos)</th></tr></thead>
+      <tbody><tr><td>0% a 1%</td><td class="n">51.034</td><td class="n">+2,11</td></tr><tr><td>1% a 2%</td><td class="n">104.565</td><td class="n">+2,59</td></tr><tr><td>2% a 3%</td><td class="n">130.578</td><td class="n">+2,93</td></tr><tr><td>3% a 5%</td><td class="n">168.889</td><td class="n">+3,25</td></tr><tr><td>5% a 8%</td><td class="n">41.372</td><td class="n">+3,60</td></tr><tr><td>8% a 12%</td><td class="n">1.365</td><td class="n">+3,66</td></tr><tr><td>12% a 100%</td><td class="n">94</td><td class="n">+3,78</td></tr></tbody>
+    </table>
+  </div>
+  <div class="leitura">
+    <h3>Variação sem fonte identificada</h3>
+    <p>Regressão, seção a seção, da variação de Lula entre os dois sobre a fatia de cada um dos demais candidatos, a queda de brancos e nulos e o aumento do comparecimento (todos em pontos dos válidos do 1º turno), com intercepto e ponderada pelos votos dos dois. O intercepto é a variação média que sobra depois de descontar essas fontes.</p>
+    <ul class="conclusoes">
+      <li>Intercepto (variação sem fonte identificada): +1,37 pontos para Lula.</li>
+      <li>R² da regressão: 0,066.</li>
+      <li>Coeficientes, em pontos de variação por ponto de cada fonte: fatia do candidato 70: 0,232; fatia do candidato 14: 0,162; fatia do candidato 55: 0,116; fatia dos demais candidatos menores: 0,094; queda de brancos e nulos: 0,139; aumento do comparecimento: 0,015.</li>
+    </ul>
+  </div>
+  <div class="tabela-rolagem">
+    <table>
+      <caption>Variação sem fonte identificada por faixa da fatia de Lula no 1º turno</caption>
+      <thead><tr><th>Lula entre os dois no 1º turno</th><th class="n">Seções</th><th class="n">Variação observada (pontos)</th><th class="n">Variação sem fonte identificada (pontos)</th></tr></thead>
+      <tbody><tr><td>0% a 10%</td><td class="n">712</td><td class="n">+2,10</td><td class="n">+1,25</td></tr><tr><td>10% a 20%</td><td class="n">13.558</td><td class="n">+3,11</td><td class="n">+1,85</td></tr><tr><td>20% a 30%</td><td class="n">56.997</td><td class="n">+3,70</td><td class="n">+2,16</td></tr><tr><td>30% a 40%</td><td class="n">103.372</td><td class="n">+3,82</td><td class="n">+2,11</td></tr><tr><td>40% a 50%</td><td class="n">105.722</td><td class="n">+3,42</td><td class="n">+1,64</td></tr><tr><td>50% a 60%</td><td class="n">80.393</td><td class="n">+2,85</td><td class="n">+1,13</td></tr><tr><td>60% a 70%</td><td class="n">60.660</td><td class="n">+2,18</td><td class="n">+0,67</td></tr><tr><td>70% a 80%</td><td class="n">45.803</td><td class="n">+1,49</td><td class="n">+0,23</td></tr><tr><td>80% a 90%</td><td class="n">24.693</td><td class="n">+0,66</td><td class="n">−0,33</td></tr><tr><td>90% a 100%</td><td class="n">5.987</td><td class="n">+0,12</td><td class="n">−0,52</td></tr></tbody>
+    </table>
+  </div>
+  <div class="leitura">
+    <p>Retirando a variação sem fonte identificada de todas as seções, Lula fica com 50,41% entre os dois, cerca de 1.015.775 votos de diferença.</p>
+  </div>
+</section>
+
+
 <section class="secao" id="biometria">
   <div class="leitura">
     <h2>Liberação sem biometria</h2>
@@ -618,6 +701,7 @@ caption { caption-side: top; text-align: left; padding: 0.7rem 0.8rem 0.3rem; fo
       <li>medir_votos_apos_17h_sem_relogio_voltando.py <span>votos depois das 17h desfazendo as voltas do relógio, a partir do log bruto</span></li>
       <li>baixar_horario_recebimento_primeiro_turno_bweb.py <span>horário original de recebimento do 1º turno, do BU oficial</span></li>
       <li>analisar_curva_apuracao_por_ordem_de_recebimento.py <span>apuração ao longo da noite (país e estados), curva prevista pelo 1º turno e curva de 2026</span></li>
+      <li>analisar_transferencia_de_votos_entre_turnos.py <span>de onde vieram os votos ganhos entre os turnos e variação sem fonte identificada</span></li>
       <li>reproduzir_curva_apuracao_2022_do_video.py <span>reprodução e teste do vídeo com os dados de 2022</span></li>
     </ul>
   </div>
